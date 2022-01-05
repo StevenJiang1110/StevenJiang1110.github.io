@@ -30,32 +30,32 @@ I will skip syntax which is common in imperative languages.
     ```
 - list and string: string is only syntactic sugar for list of chars.
   There can only be items of the same type in one list.  
-  concat two lists:
+  concat two lists:  
       ```Haskell
-      [1,2,3] ++ [4,5,6] -- [1,2,3,4,5,6]
-      'A': " SMALL CAT" -- "A SMALL CAT"
-      ```
-  get element of index:
+      [1,2,3] ++ [4,5,6] -- [1,2,3,4,5,6]  
+      'A': " SMALL CAT" -- "A SMALL CAT"  
+      ```  
+  get element of index:  
+      ```Haskell  
+      "Steve Buscemi" !! 6 -- 'B'  
+      ```  
+  infix functions:  
       ```Haskell
-      "Steve Buscemi" !! 6 -- 'B'
-      ```
-  infix functions:
-      ```Haskell
-      4 `elem` [3, 4, 5, 6] -- True
-      ```
+      4 `elem` [3, 4, 5, 6] -- True  
+      ```  
 - ranges:
     `[1..20], ['a'..'z']`  
   indicate steps:
     ```Haskell  
     [2,4..20] -- step=2  
-    [20,19..1] -- step=-1
+    [20,19..1] -- step=-1  
     ```  
   infinite range:  
-    `[1..]`
-- list comprehension: List comprehension in Haskell is like in Math. 
+    `[1..]`  
+- list comprehension: List comprehension in Haskell is like in Math.  
     ```Haskell
-    [x*2 | x <- [1..3], odd x] -- [2,6] 
-    [x*y | x <- [1,3], y <- [2,4]] -- [2, 4, 6, 12]  
+    [x*2 | x <- [1..3], odd x] -- [2,6]   
+    [x*y | x <- [1,3], y <- [2,4]] -- [2, 4, 6, 12]   
     ```
 - tuples: There can be values of multiple types in a tuple, but of only one type in a list.  
 
